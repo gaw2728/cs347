@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="utf-8"/>
+        <title>Geoffrey A Wright Personal</title>
+    </head>
+    <header id="header">
+        <h1>Welcome to the contact page!</h1>
+        <!--Navigation elements-->
+        <nav>
+                <!--Chose table for nice organization-->
+                <table>
+                    <thead>
+                        <tr>
+                            <td colspan="3"><h4>Site Navigation</h4></td>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td><a href="/cs347/html/index.html">Home</a></td>
+                        <td><a href="#header">Contact Me</a></td>
+                        <td><a href="/cs347/html/school.html">Schooling</a></td>
+                    </tr>
+                </table>
+            </nav>
+    </header>
+    <main>
+        <section>
+            <!--Section for the contact table-->
+            <article>
+                <h4>The ways to do it:</h4>
+                <p>Below is a table of different media and ways to follow or keep in contact with me.<br>
+                    Just under that is a form you can use to leave me a message if you'd like.
+                </p>
+            </article>
+            <table>
+                <thead>
+                    <th>Method</th>
+                    <th>Means</th>
+                </thead>
+                <tr>
+                    <td>Phone</td>
+                    <td><a href="tel:1-571-442-1863">(571)-442-1863</a></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><a href="mailto:gaw2728@gmail.com">gaw2728@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td>Facebook</td>
+                    <td><a href="https://www.facebook.com/geoffrey.wright.92372" rel="noopener noreferrer" target="_blank">
+                        https://www.facebook.com/geoffrey.wright.92372</a></td>
+                </tr>
+                <tr>
+                    <td>LinkedIn</td>
+                    <td><a href="https://www.linkedin.com/in/geoffrey-wright-7b1632133/" rel="noopener noreferrer" target="_blank">
+                        https://www.linkedin.com/in/geoffrey-wright-7b1632133/</a></td>
+                </tr>
+            </table>
+        </section>
+        <!--section for the message form-->
+        <section>
+            <h4>Site message form:</h4>
+            <!--FORM ACTIONS AND SUBMISSIONS TO DE DETERMINED IN LATER PROJECT-->
+            <form action="POST">
+                <!--Name field section-->
+                <section>
+                    <label for="name_field">Name</label>
+                    <input type="text" name="name_field" id="name_field" required minlength="3" pattern="^[a-zA-z\s]+$">
+                </section>
+                <!--Person type section-->
+                <section>
+                    <label for="person_type">Who is messaging?</label>
+                    <select name="person_type" id="person_type">
+                        <option value="na" selected>other</option>
+                        <option value="emp">Employer</option>
+                        <option value="rec">Recruiter</option>
+                        <option value="ac">Academic</option>
+                        <option value="vol">Volunteer</option>
+                    </select>
+                </section>
+                <!--Text area section-->
+                <section>
+                    <label for="user_message">Have something you would like to tell me?</label><br>
+                    <textarea name="user_message" id="user_message" cols="40" rows="10" required minlength="1"></textarea>
+                </section>
+                <!--Submit button section-->
+                <section>
+                    <input type="submit" value="Send Message">
+                </section>
+            </form>
+        </section>
+    </main>
+    <footer>
+            <!--Navigation elements-->
+            <nav>
+                <!--Chose table for nice organization-->
+                <table>
+                    <tr>
+                        <td><a href="/cs347/html/index.html">Home</a></td>
+                        <td><a href="#header">Contact Me</a></td>
+                        <td><a href="/cs347/html/school.html">Schooling</a></td>
+                    </tr>
+                </table>
+            </nav>
+    </footer>
+</html>
