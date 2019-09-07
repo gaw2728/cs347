@@ -26,17 +26,17 @@
     </header>
     <main>
         <section>
+            <h4>The ways to do it:</h4>
             <!--Section for the contact table-->
-            <article>
-                <h4>The ways to do it:</h4>
-                <p>Below is a table of different media and ways to follow or keep in contact with me.<br>
-                    Just under that is a form you can use to leave me a message if you'd like.
+            <p>Below is a table of different media and ways to follow or keep in contact with me.<br>
+                Just under that is a form you can use to leave me a message if you'd like.
                 </p>
-            </article>
             <table>
                 <thead>
-                    <th>Method</th>
-                    <th>Means</th>
+                    <tr>
+                        <th>Method</th>
+                        <th>Means</th>
+                    </tr>
                 </thead>
                 <tr>
                     <td>Phone</td>
@@ -64,30 +64,22 @@
             <!--FORM ACTIONS AND SUBMISSIONS TO DE DETERMINED IN LATER PROJECT-->
             <form action="POST">
                 <!--Name field section-->
-                <section>
-                    <label for="name_field">Name</label>
-                    <input type="text" name="name_field" id="name_field" required minlength="3" pattern="^[a-zA-z\s]+$">
-                </section>
+                <label for="name_field">Name</label>
+                <input type="text" name="name_field" id="name_field" required minlength="3" pattern="^[a-zA-z\s]+$">
                 <!--Person type section-->
-                <section>
-                    <label for="person_type">Who is messaging?</label>
-                    <select name="person_type" id="person_type">
-                        <option value="na" selected>other</option>
-                        <option value="emp">Employer</option>
-                        <option value="rec">Recruiter</option>
-                        <option value="ac">Academic</option>
-                        <option value="vol">Volunteer</option>
-                    </select>
-                </section>
+                <label for="person_type">Who is messaging?</label>
+                <select name="person_type" id="person_type">
+                    <option value="na" selected>other</option>
+                    <option value="emp">Employer</option>
+                    <option value="rec">Recruiter</option>
+                    <option value="ac">Academic</option>
+                    <option value="vol">Volunteer</option>
+                </select>
                 <!--Text area section-->
-                <section>
-                    <label for="user_message">Have something you would like to tell me?</label><br>
-                    <textarea name="user_message" id="user_message" cols="40" rows="10" required minlength="1"></textarea>
-                </section>
+                <label for="user_message">Have something you would like to tell me?</label><br>
+                <textarea name="user_message" id="user_message" cols="40" rows="10" required minlength="1"></textarea>
                 <!--Submit button section-->
-                <section>
-                    <input type="submit" value="Send Message">
-                </section>
+                <input type="submit" value="Send Message">
             </form>
         </section>
     </main>
