@@ -5,6 +5,10 @@
         <meta name="viewport" content="width=device-width">
         <meta charset="utf-8"/>
         <title>Geoffrey A Wright PPP</title>
+        <link href="../css/site.css" rel="stylesheet" type="text/css">
+        <link href="../css/index.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet"> 
     </head>
     <!--page header-->
     <header id="header">
@@ -12,7 +16,7 @@
         <!--Navigation Elements Top-->
         <nav>
             <h3>Site Navigation Top</h3>
-            <ul>
+            <ul class="navlist">
                 <li><a href="#header">Home</a></li>
                 <li><a href="/cs347/html/contactme.html">Contact Me</a></li>
                 <li><a href="/cs347/html/school.html">Schooling</a></li>
@@ -21,17 +25,17 @@
     </header>
     <!--Main content of page-->
     <main>
-        <section>
-            <h4>A professional picture taken of me post graduation in Leesburg, VA.</h4>
+        <section id="figure_section">
             <figure>
                 <!--COME BACK TO IMAGE BEHAVIOR-->
-                <img src="resources/Me_and_the_Bentlyx3_604.jpg"
+                <img id="my_pic"src="resources/Me_and_the_Bentlyx3_604.jpg" width="100%" height="100%"
                 alt="A picture of me standing in front of a Bently post graduation.">
-                <br>
+                <figcaption>A professional picture taken of me post graduation in Leesburg, VA.
+                </figcaption>
             </figure>
         </section>
-        <section>
-            <h2>Where am I?</h2>
+        <section id="article_section">
+            <h2>Where am I?</h2><br>
             <article>
                 <h4>Introduction: "<code>system.out.print("HELLO WORLD!);</code>"</h4>
                 <p>Hello, and congratulations on finding my website! I would be elated if you took a moment to look around.
@@ -65,7 +69,7 @@
         <!--Navigation Elements Bottom-->
         <nav>
                 <h3>Site Navigation Bottom</h3>
-                <ul>
+                <ul class="navlist">
                     <li><a href="#header">Home</a></li>
                     <li><a href="/cs347/html/contactme.html">Contact Me</a></li>
                     <li><a href="/cs347/html/school.html">Schooling</a></li>
