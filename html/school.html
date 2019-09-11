@@ -8,21 +8,14 @@
     <!--page header-->
     <header id="header">
         <h1>Welcome to the schooling information page!</h1>
-        <!--Navigation elements-->
+        <!--Navigation Elements Top-->
         <nav>
-            <!--Chose table for nice organization-->
-            <table>
-                <thead>
-                    <tr>
-                        <td colspan="3"><h4>Site Navigation</h4></td>
-                    </tr>
-                </thead>
-                <tr>
-                    <td><a href="/cs347/html/index.html">Home</a></td>
-                    <td><a href="/cs347/html/contactme.html">Contact Me</a></td>
-                    <td><a href="#header">Schooling</a></td>
-                </tr>
-            </table>
+            <h3>Site Navigation Top</h3>
+            <ul>
+                <li><a href="/cs347/html/index.html">Home</a></li>
+                <li><a href="/cs347/html/contactme.html">Contact Me</a></li>
+                <li><a href="#header">Schooling</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -78,39 +71,45 @@
             <h4>The Numbers.</h4>
             <p>As well as making the <a href="https://www.nvcc.edu/catalog/cat2018/policies/honors.html"
                 rel="noopener noreferrer" target="_blank">Dean's List</a> at NOVA, my James Madison grade statistics are:</p>
-            <table>
-                <!--Table heading-->
-                <tr>
-                    <th>Category</th>
-                    <th>GPA</th>
-                </tr>
-                <tr>
-                    <td><em>Computer Science [major]</em></td>
-                    <td>3.316</td>
-                </tr>
-                <tr>
-                    <td><em>Human Resource Development [minor]</em></td>
-                    <td>4.000</td>
-                </tr>
-                <tr>
-                    <td><em>Cumulative GPA</em></td>
-                    <td>3.544</td>
-                </tr>
-            </table>
+            <figure>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Category</th>
+                            <th scope="col">GPA</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td><em>Cumulative GPA</em></td>
+                            <td>3.544</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td><em>Computer Science [major]</em></td>
+                            <td>3.316</td>
+                        </tr>
+                        <tr>
+                            <td><em>Human Resource Development [minor]</em></td>
+                            <td>4.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <figcaption>Table containing my GPA totals.</figcaption>
+            </figure>
         </section>
     </main>
     <!--page footer-->
     <footer>
-        <!--Navigation elements-->
+        <!--Navigation Elements Bottom-->
         <nav>
-            <!--Chose table for nice organization-->
-            <table>
-                <tr>
-                    <td><a href="/cs347/html/index.html">Home</a></td>
-                    <td><a href="/cs347/html/contactme.html">Contact Me</a></td>
-                    <td><a href="#header">Schooling</a></td>
-                </tr>
-            </table>
+            <h3>Site Navigation Bottom</h3>
+            <ul>
+                <li><a href="/cs347/html/index.html">Home</a></li>
+                <li><a href="/cs347/html/contactme.html">Contact Me</a></li>
+                <li><a href="#header">Schooling</a></li>
+            </ul>
         </nav>
     </footer>
 </html>
