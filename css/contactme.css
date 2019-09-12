@@ -6,25 +6,39 @@ ul >li {
     padding: 10px 10px;
     border: 3px darkorange dashed;
 }
+main {
+    text-align: center;
+    overflow: scroll;
+}
 .contact_table {
+    display: inline-block;
+}
+.contact_table, .contact_table th, .contact_table td {
     padding: 15px 15px;
     border: 3px solid darkorange;
 }
 .content_table_method::before {
     content: "*";
 }
-.table_section {
-    clear: left;
+form {
+    padding: 15px 15px;
+    border: 3px solid darkorange;
+    width: auto;
+    text-align: center;
 }
-.contact_table {
-    float: left;
+input {
+    width: 25%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
 }
-.form_section {
-    border: 10px white solid;
-    
-    margin: 20px 20px;
-    clear: right;
+textarea {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
-#person_type {
-    display: inline;
+select {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }

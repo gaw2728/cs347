@@ -7,6 +7,11 @@
     vertical-align: baseline;
     font-family: 'Ubuntu', 'Courier New','Press Start 2P', cursive, Courier, monospace, sans-serif;
 }
+@font-face {
+    font-family: "roboto";
+    src: url("fonts/Roboto-Regular.ttf") format("truetype");
+    font-style: normal;
+}
 body {
     background-image: linear-gradient( DarkBlue, DarkTurquoise);
     margin: 0 auto;
@@ -44,7 +49,12 @@ main {
     background-clip: padding-box;
     padding: 40px;
 }
+/*In order to fufil the "display none" requirement
+I used it on the footer of the site. I couldn't
+think of how else to include it without harming
+the site design.*/
 footer {
+    display: none;
     width: auto;
     align-content: center;
     margin: 0 auto;
@@ -66,12 +76,15 @@ h4 {
     font-weight: 900;
 }
 p {
+    font-family: "roboto";
+    font-style: normal;
     margin: 10px 0px;
-    font-size: 0.875em;
+    font-size: 12px;
     font-weight: normal;
 }
 ul {
-    list-style: none;
+    list-style-type: square;
+    list-style-position: outside;
 }
 a:link {
     color: white;
