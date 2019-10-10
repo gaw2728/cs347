@@ -7,7 +7,9 @@
         <link href="../css/site.css" rel="stylesheet" type="text/css">
         <link href="../css/contactme.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <!-- BELOW JAVASCRIPT INCLUSION FOR PPP PART 3-->
+        <script type="text/javascript" src="../javascript/contactForm.js"></script>
     </head>
     <header id="header">
         <h1>Welcome to the contact page!</h1>
@@ -15,9 +17,9 @@
         <nav>
             <h3>Site Navigation Top</h3>
             <ul class="navlist">
-                <li><a href="/cs347/html/index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#header">Contact Me</a></li>
-                <li><a href="/cs347/html/school.html">Schooling</a></li>
+                <li><a href="school.html">Schooling</a></li>
             </ul>
         </nav>
     </header>
@@ -27,7 +29,7 @@
             <!--Section for the contact table-->
             <p>Below is a table of different media and ways to follow or keep in contact with me.<br>
                 Just under that is a form you can use to leave me a message if you'd like.
-                </p>
+            </p>
             <table class="contact_table">
                 <thead>
                     <tr>
@@ -59,12 +61,12 @@
         <section class="form_section">
             <h4>Site message form:</h4>
             <!--FORM ACTIONS AND SUBMISSIONS TO DE DETERMINED IN LATER PROJECT-->
-            <form action="POST">
+            <form>
                 <fieldset>
                     <legend>Drop me a message</legend>
                     <!--Name field section-->
-                    <label for="name_field">Name</label>
-                    <input type="text" name="name_field" id="name_field" required minlength="3" pattern="^[a-zA-z\s]+$">
+                    <label for="name_field" id="name_field_label">Name</label>
+                    <input type="text" name="name_field" id="name_field">
                     <!--Person type section-->
                     <label for="person_type">Who is messaging?</label>
                     <select name="person_type" id="person_type">
@@ -75,10 +77,10 @@
                         <option value="vol">Volunteer</option>
                     </select>
                     <!--Text area section-->
-                    <label for="user_message">Have something you would like to tell me?</label><br>
-                    <textarea name="user_message" id="user_message" cols="40" rows="10" required minlength="1"></textarea>
+                    <label for="user_message" id=user_message_label>Have something you would like to tell me?</label><br>
+                    <textarea name="user_message" id="user_message" cols="40" rows="10"></textarea>
                     <!--Submit button section-->
-                    <input type="submit" value="Send Message">
+                    <input type="submit" value="Send Message" id="submit_button">
                 </fieldset>
             </form>
         </section>
@@ -88,9 +90,9 @@
         <nav class="navlist">
             <h3>Site Navigation Bottom</h3>
             <ul>
-                <li><a href="/cs347/html/index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#header">Contact Me</a></li>
-                <li><a href="/cs347/html/school.html">Schooling</a></li>
+                <li><a href="school.html">Schooling</a></li>
             </ul>
         </nav>
     </footer>
